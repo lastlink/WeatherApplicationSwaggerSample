@@ -19,6 +19,11 @@ namespace WebApplication5
         public string? Summary { get; set; }
         public List<NestedKey> nestedPropsArray { get; set; }
         public Dictionary<string, NestedKey> NestedProps { get; set; } = new Dictionary<string, NestedKey>();
+        public Dictionary<string, string> stringDictionary { get; set; }
+        public Dictionary<string, object> keyValuePairs { get; set; }
+        /// <summary>
+        /// different article commment
+        /// </summary>
         public Article Article { get; set; }
     }
     /// <summary>
@@ -34,13 +39,20 @@ namespace WebApplication5
         public string description { get; set; }
 
         public string url { get; set; }
-
+        /// <summary>
+        /// nested article type comment
+        /// </summary>
         public ArticleType type { get; set; }
         public ArticleType2 type2 { get; set; }
         public UserDetails ModifiedBy { get; set; }
         public UserDetails CreatedBy { get; set; }
         public List<Article> articles { get; set; }
         public List<string> strings { get; set; }
+        public List<int> ints { get; set; }
+        public List<double> doubles { get; set; }
+        public List<bool> bools { get; set; }
+        public List<DateTime> dates { get; set; }
+        public List<object> objects { get; set; }
     }
     /// <summary>
     /// enum article type
